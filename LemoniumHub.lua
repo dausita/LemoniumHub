@@ -21,6 +21,7 @@ local Tabs = {
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),  -- Yeni sekme
+    Evade = Window:AddTab({ Title = "Evade", Icon = "" }),  -- Yeni sekme
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -148,13 +149,13 @@ Tabs.TheStrongestBattlegrounds:AddButton({
     end
 })
 
--- Yeni Tab: Arsenal
-Tabs.Arsenal:AddButton({
+-- Yeni Tab: Evade
+Tabs.Evade:AddButton({
     Title = "Tbao Hub", 
-    Description = "Best Keyless Arsenal Hub", 
+    Description = "Best Keyless Evade Script", 
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
-        print("Tbao Hub executed.")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
+        print("Tbao Hub Evade executed.")
     end
 })
 
