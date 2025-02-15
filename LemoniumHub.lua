@@ -13,11 +13,11 @@ local Window = Fluent:CreateWindow({
 })
 
 local Tabs = {
-    Main = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
+    Main = Window:AddTab({ Title = "Aimbot", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
-    BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
-    Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
+    BloxFruit = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
+    Fisch = Window:AddTab({ Title = "Fisch", Icon = "" }),
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
