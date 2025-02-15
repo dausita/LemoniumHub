@@ -14,20 +14,20 @@ local Window = Fluent:CreateWindow({
 
 local Tabs = {
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
+    Main = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
     Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
-    Main = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
     MadCityChapter1 = Window:AddTab({ Title = "Mad City Chapter 1", Icon = "" }),
     MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
     ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }),
     UniversalAnimation = Window:AddTab({ Title = "Universal Animation/Emote", Icon = "" }),
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
-    Misc = Window:AddTab({ Title = "Misc", Icon = "" }),  -- Misc tab ilk sırada
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })  -- Settings tab son sırada
+    Misc = Window:AddTab({ Title = "Misc", Icon = "" }),  
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })  
 }
 
 local Options = Fluent.Options
@@ -172,7 +172,7 @@ Tabs.ShrimpGame:AddButton({
 })
 
 Tabs.BladeBall:AddButton({
-    Title = "Infernium Hub", 
+    Title = "Infernium Hub Blade Ball", 
     Description = "Best Blade Ball Script (have key system)", 
     Callback = function()
         loadstring(game:HttpGet("https://infernium.xyz/Blade.lua",true))()
@@ -267,6 +267,15 @@ Tabs.Misc:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
         print("Dark Dex executed.")
+    end
+})
+
+Tabs.RealisticStreetSoccer:AddButton({
+    Title = "Best Realistic Street Soccer Script", 
+    Description = "Executes the best Realistic Street Soccer script", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/YourRepo/RealisticStreetSoccer/main/script.lua"))()
+        print("Realistic Street Soccer script executed.")
     end
 })
 
