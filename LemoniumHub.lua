@@ -23,6 +23,7 @@ local Tabs = {
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),  -- Yeni sekme
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),  -- Yeni sekme
     ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }), -- Yeni sekme
+    BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }), -- Yeni sekme
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -167,6 +168,16 @@ Tabs.ShrimpGame:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/MateoDev2024/MoonX/refs/heads/main/Loader.lua", true))()
         print("Moon X executed.")
+    end
+})
+
+-- Yeni Tab: Blade Ball
+Tabs.BladeBall:AddButton({
+    Title = "Infernium Hub", 
+    Description = "Best Blade Ball Script (have key system)", 
+    Callback = function()
+        loadstring(game:HttpGet("https://infernium.xyz/Blade.lua",true))()
+        print("Infernium Hub Blade Ball executed.")
     end
 })
 
