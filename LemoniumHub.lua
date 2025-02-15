@@ -17,6 +17,7 @@ local Tabs = {
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
+    Brookhaven = Window:AddTab({ Title = "Brookhaven", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
     Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
@@ -96,6 +97,15 @@ Tabs.BloxFruit:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/main/Source.lua"))()
         print("Redz Hub executed.")
+    end
+})
+
+Tabs.Brookhaven:AddButton({
+    Title = "Sander X", 
+    Description = "Brookhaven Keyless Troll Script", 
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/sXPiterXs1111/Sanderxv3.30/main/sanderx3.30')))()
+        print("Sander X executed.")
     end
 })
 
