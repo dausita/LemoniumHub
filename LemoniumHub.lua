@@ -113,6 +113,16 @@ Tabs.BloxFruit:AddButton({
     end
 })
 
+-- "Native" butonunu en üste ekledim
+Tabs.Fisch:AddButton({
+    Title = "Native", 
+    Description = "Best Fisch Script (have key)", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Native-lab/Native/main/loader.lua"))()
+        print("Native Fisch Script executed.")
+    end
+})
+
 Tabs.Fisch:AddButton({
     Title = "Speed Hub", 
     Description = "Best Keyless Fisch Script", 
