@@ -13,13 +13,14 @@ local Window = Fluent:CreateWindow({
 })
 
 local Tabs = {
-    Main = Window:AddTab({ Title = "Aimbot", Icon = "" }),
+    Main = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
-    BloxFruit = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
-    Fisch = Window:AddTab({ Title = "Fisch", Icon = "" }),
+    BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
+    Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
+    Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),  -- Yeni sekme
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -140,10 +141,20 @@ Tabs.TheStrongestBattlegrounds:AddButton({
 -- Yeni Buton: Speed Hub X
 Tabs.TheStrongestBattlegrounds:AddButton({
     Title = "Speed Hub X", 
-    Description = "Best Keyless TSB Script", 
+    Description = "Best Keyless Speed Hub X Script", 
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
         print("Speed Hub X executed.")
+    end
+})
+
+-- Yeni Tab: Arsenal
+Tabs.Arsenal:AddButton({
+    Title = "Tbao Hub", 
+    Description = "Best Keyless Arsenal Hub", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
+        print("Tbao Hub executed.")
     end
 })
 
