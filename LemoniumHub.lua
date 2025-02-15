@@ -292,4 +292,4 @@ SaveManager:LoadAutoloadConfig()
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
 
-Window:SelectTab(1)     -- Misc tab artık ilk sırada olacak
+Window:SelectTab(1)     
