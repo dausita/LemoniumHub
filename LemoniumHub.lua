@@ -137,6 +137,16 @@ Tabs.TheStrongestBattlegrounds:AddButton({
     end
 })
 
+-- Yeni Buton: Speed Hub X
+Tabs.TheStrongestBattlegrounds:AddButton({
+    Title = "Speed Hub X", 
+    Description = "Best Keyless Speed Hub X Script", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+        print("Speed Hub X executed.")
+    end
+})
+
 SaveManager:LoadAutoloadConfig()
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
