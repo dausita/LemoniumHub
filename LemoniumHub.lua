@@ -18,6 +18,7 @@ local Tabs = {
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
     Brookhaven = Window:AddTab({ Title = "Brookhaven", Icon = "" }),
+	CabinRoleplay = Window:AddTab({ Title = "Cabin Roleplay", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
     Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
@@ -29,7 +30,8 @@ local Tabs = {
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
     UniversalSuperRingPartsV6 = Window:AddTab({ Title = "Universal Super Ring Parts v6", Icon = "" }),
     Misc = Window:AddTab({ Title = "Misc", Icon = "" }), 
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+	Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
+    
 }
 
 local Options = Fluent.Options
@@ -48,6 +50,17 @@ Fluent:Notify({
     Duration = 5
 })
 
+-- CabinRoleplay tab'ına M1ZZ001 gui butonunu ekliyoruz
+Tabs.CabinRoleplay:AddButton({
+    Title = "M1ZZ001 gui",
+    Description = "M1ZZ001 GUI'yi çalıştırır.",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/SomeUser/M1ZZ001gui/main/script.lua"))()
+        print("M1ZZ001 GUI çalıştırıldı.")
+    end
+})
+
+-- Diğer mevcut tablar ve butonlar buraya eklenmiş şekilde devam ediyor
 Tabs.Aimbot:AddButton({
     Title = "Aimbot🎯",
     Description = "OP and Keyless Aimbot",
@@ -181,7 +194,6 @@ Tabs.UniversalSuperRingPartsV6:AddButton({
         print("Super Ring Parts v6 executed.")
     end
 })
-
 
 Tabs.ShrimpGame:AddButton({
     Title = "Moon X", 
