@@ -17,6 +17,7 @@ local Tabs = {
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
+    Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -103,6 +104,15 @@ Tabs.BloxFruit:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/main/Source.lua"))()
         print("Redz Hub executed.")
+    end
+})
+
+Tabs.Fisch:AddButton({
+    Title = "Speed Hub", 
+    Description = "Best Keyless Fisch Script", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+        print("Speed Hub executed.")
     end
 })
 
