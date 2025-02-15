@@ -163,6 +163,14 @@ Tabs.Evade:AddButton({
     end
 })
 
+Title = "Super Ring Parts v6",
+    Description = "Keyless OP Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/chesslovers69/Super-ring-parts-v6/refs/heads/main/Bylukaslol"))()
+        print("Super Ring Parts v6 executed.")
+    end
+})
+
 Tabs.ShrimpGame:AddButton({
     Title = "Moon X", 
     Description = "Best Fr Shrimp Game Script", 
