@@ -171,6 +171,17 @@ Tabs.Evade:AddButton({
     end
 })
 
+-- "Rose Farm" butonunu "Evade" sekmesine ekledim
+Tabs.Evade:AddButton({
+    Title = "Rose Farm", 
+    Description = "Keyless Rose Farm", 
+    Callback = function()
+        getgenv().farm = true -- false/true
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Bac0nHck/Scripts/refs/heads/main/evade-farm.lua"))()
+        print("Rose Farm executed.")
+    end
+})
+
 -- Yeni Tab: Shrimp Game
 Tabs.ShrimpGame:AddButton({
     Title = "Moon X", 
