@@ -26,8 +26,8 @@ local Tabs = {
     UniversalAnimation = Window:AddTab({ Title = "Universal Animation/Emote", Icon = "" }),
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
-    Misc = Window:AddTab({ Title = "Misc", Icon = "" })  -- Misc tab eklendi
+    Misc = Window:AddTab({ Title = "Misc", Icon = "" }),  -- Misc tab ilk sırada
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })  -- Settings tab son sırada
 }
 
 local Options = Fluent.Options
@@ -292,4 +292,4 @@ SaveManager:LoadAutoloadConfig()
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
 
-Window:SelectTab(1)
+Window:SelectTab(1)     -- Misc tab artık ilk sırada olacak
