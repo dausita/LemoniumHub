@@ -4,7 +4,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local Window = Fluent:CreateWindow({
     Title = "Lemonium Hub " .. Fluent.Version,
-    SubTitle = "by dausita",
+    SubTitle = "by dausita helper wallyxlv",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true,
