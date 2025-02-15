@@ -22,6 +22,7 @@ local Tabs = {
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),  -- Yeni sekme
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),  -- Yeni sekme
+    ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }), -- Yeni sekme
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -156,6 +157,16 @@ Tabs.Evade:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
         print("Tbao Hub Evade executed.")
+    end
+})
+
+-- Yeni Tab: Shrimp Game
+Tabs.ShrimpGame:AddButton({
+    Title = "Moon X", 
+    Description = "Best Fr Shrimp Game Script", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/MateoDev2024/MoonX/refs/heads/main/Loader.lua", true))()
+        print("Moon X executed.")
     end
 })
 
