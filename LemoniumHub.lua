@@ -91,7 +91,7 @@ local ThemeDropdown = Tabs.Settings:AddDropdown("ThemeDropdown", {
 
 Tabs.MM2:AddButton({
     Title = "Keyless OP MM2 Script", 
-    Description = "Executes the Keyless OP MM2 Script", 
+    Description = "Wait 10 sec for load", 
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
         print("Keyless OP MM2 Script executed.")
