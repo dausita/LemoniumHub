@@ -13,19 +13,21 @@ local Window = Fluent:CreateWindow({
 })
 
 local Tabs = {
-    Main = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
-    CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
-    MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
-    BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
-    Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
-    UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
-    TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
-    Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
-    ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }),
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
+    BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
+    CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
+    Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
+    Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
+    Main = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
+    MadCityChapter1 = Window:AddTab({ Title = "Mad City Chapter 1", Icon = "" }),
+    MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
+    ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }),
+    UniversalAnimation = Window:AddTab({ Title = "Universal Animation/Emote", Icon = "" }),
+    TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
+    UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
-    UniversalAnimation = Window:AddTab({ Title = "Universal Animation/Emote", Icon = "" }) -- Yeni sekme eklendi
+    Misc = Window:AddTab({ Title = "Misc", Icon = "" })  -- Misc tab eklendi
 }
 
 local Options = Fluent.Options
@@ -42,24 +44,6 @@ Fluent:Notify({
     Title = "Notification",
     Content = "Thank You For Using This Hub",
     Duration = 5
-})
-
-Tabs.Settings:AddButton({
-    Title = "Save Config", 
-    Description = "Save your current settings to a config file",
-    Callback = function()
-        SaveManager:SaveConfig("MyConfig")
-        print("Config saved as MyConfig.")
-    end
-})
-
-Tabs.Settings:AddButton({
-    Title = "Load Config", 
-    Description = "Load settings from a saved config file",
-    Callback = function()
-        SaveManager:LoadConfig("MyConfig")
-        print("Config loaded from MyConfig.")
-    end
 })
 
 Tabs.Main:AddButton({
@@ -114,7 +98,6 @@ Tabs.BloxFruit:AddButton({
     end
 })
 
--- "Native" butonunu en üste ekledim
 Tabs.Fisch:AddButton({
     Title = "Native", 
     Description = "Best Fisch Script (have key)", 
@@ -142,7 +125,6 @@ Tabs.UniversalAutoPlayPiano:AddButton({
     end
 })
 
--- Yeni Tab: The Strongest Battlegrounds
 Tabs.TheStrongestBattlegrounds:AddButton({
     Title = "Infernium Hub Tsb", 
     Description = "Free TSB Script (have key)", 
@@ -152,7 +134,6 @@ Tabs.TheStrongestBattlegrounds:AddButton({
     end
 })
 
--- Yeni Buton: Speed Hub X
 Tabs.TheStrongestBattlegrounds:AddButton({
     Title = "Speed Hub X", 
     Description = "Best Keyless Speed Hub X Script", 
@@ -162,7 +143,6 @@ Tabs.TheStrongestBattlegrounds:AddButton({
     end
 })
 
--- Yeni Tab: Evade
 Tabs.Evade:AddButton({
     Title = "Tbao Hub", 
     Description = "Best Keyless Evade Script", 
@@ -172,7 +152,6 @@ Tabs.Evade:AddButton({
     end
 })
 
--- "Rose Farm" butonunu "Evade" sekmesine ekledim
 Tabs.Evade:AddButton({
     Title = "Rose Farm", 
     Description = "Keyless Rose Farm", 
@@ -183,7 +162,6 @@ Tabs.Evade:AddButton({
     end
 })
 
--- Yeni Tab: Shrimp Game
 Tabs.ShrimpGame:AddButton({
     Title = "Moon X", 
     Description = "Best Fr Shrimp Game Script", 
@@ -193,7 +171,6 @@ Tabs.ShrimpGame:AddButton({
     end
 })
 
--- Yeni Tab: Blade Ball
 Tabs.BladeBall:AddButton({
     Title = "Infernium Hub", 
     Description = "Best Blade Ball Script (have key system)", 
@@ -203,13 +180,111 @@ Tabs.BladeBall:AddButton({
     end
 })
 
--- Yeni Tab: Universal Animation/Emote
 Tabs.UniversalAnimation:AddButton({
     Title = "Universal Animation", 
     Description = "Universal Animation/Emote Script (Keyless)", 
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Eazvy/public-scripts/main/Universal_Animations_Emotes.lua"))()
         print("Universal Animation script executed.")
+    end
+})
+
+Tabs.Arsenal:AddButton({
+    Title = "Tbao Hub Arsenal", 
+    Description = "Best Keyless Arsenal Script", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
+        print("Tbao Hub Arsenal executed.")
+    end
+})
+
+Tabs.MadCityChapter1:AddButton({
+    Title = "Epic Hub", 
+    Description = "Best Mad City Script Key : Zglad", 
+    Callback = function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/VanPotent/EpicHub/refs/heads/main/loader.lua'),true))()
+        print("Epic Hub executed.")
+    end
+})
+
+Tabs.Misc:AddButton({
+    Title = "Infinite Yield 6.2",  -- Infinite Yield butonu eklendi
+    Description = "Opens Infinite Yield Script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+        print("Infinite Yield 6.2 executed.")
+    end
+})
+
+Tabs.Misc:AddSlider("sdaow", 
+{
+    Title = "Speed Changer",
+    Description = "Changes ur speed",
+    Default = 16,
+    Min = 16,
+    Max = 500,
+    Rounding = 1,
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+        if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+            player.Character.Humanoid.WalkSpeed = Value
+        end
+    end
+})
+
+Tabs.Misc:AddSlider("jumpPowerChanger", 
+{
+    Title = "Jump Power Changer",  -- Jump Power changer slider
+    Description = "Changes your jump power",
+    Default = 50,
+    Min = 50,
+    Max = 200,
+    Rounding = 1,
+    Callback = function(Value)
+        local player = game.Players.LocalPlayer
+        if player and player.Character and player.Character:FindFirstChild("Humanoid") then
+            player.Character.Humanoid.JumpPower = Value
+        end
+    end
+})
+
+Tabs.Misc:AddSlider("fovChanger", 
+{
+    Title = "FOV Changer",  -- FOV slider
+    Description = "Changes your field of view",
+    Default = 70,
+    Min = 0,
+    Max = 120,
+    Rounding = 1,
+    Callback = function(Value)
+        game.Workspace.CurrentCamera.FieldOfView = Value
+    end
+})
+
+Tabs.Misc:AddButton({
+    Title = "Dark Dex",  -- Dark Dex butonu eklendi
+    Description = "Opens the Dark Dex script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
+        print("Dark Dex executed.")
+    end
+})
+
+Tabs.Settings:AddButton({
+    Title = "Save Config", 
+    Description = "Save your current settings to a config file",
+    Callback = function()
+        SaveManager:SaveConfig("MyConfig")
+        print("Config saved as MyConfig.")
+    end
+})
+
+Tabs.Settings:AddButton({
+    Title = "Load Config", 
+    Description = "Load settings from a saved config file",
+    Callback = function()
+        SaveManager:LoadConfig("MyConfig")
+        print("Config loaded from MyConfig.")
     end
 })
 
