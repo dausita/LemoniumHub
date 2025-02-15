@@ -1,1 +1,1 @@
-Thank U For Using The Open Beta More Games Are Coming Soon!
+Thank U For Using The Lemonium Hub More Games Are Coming Soon!
