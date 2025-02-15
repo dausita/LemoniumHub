@@ -20,11 +20,12 @@ local Tabs = {
     Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
-    Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),  -- Yeni sekme
-    Evade = Window:AddTab({ Title = "Evade", Icon = "" }),  -- Yeni sekme
-    ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }), -- Yeni sekme
-    BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }), -- Yeni sekme
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+    Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
+    Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
+    ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }),
+    BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
+    UniversalAnimation = Window:AddTab({ Title = "Universal Animation/Emote", Icon = "" }) -- Yeni sekme eklendi
 }
 
 local Options = Fluent.Options
@@ -199,6 +200,16 @@ Tabs.BladeBall:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://infernium.xyz/Blade.lua",true))()
         print("Infernium Hub Blade Ball executed.")
+    end
+})
+
+-- Yeni Tab: Universal Animation/Emote
+Tabs.UniversalAnimation:AddButton({
+    Title = "Universal Animation", 
+    Description = "Universal Animation/Emote Script (Keyless)", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Eazvy/public-scripts/main/Universal_Animations_Emotes.lua"))()
+        print("Universal Animation script executed.")
     end
 })
 
