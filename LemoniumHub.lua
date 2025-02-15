@@ -4,7 +4,7 @@ local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.
 
 local Window = Fluent:CreateWindow({
     Title = "Lemonium Hub " .. Fluent.Version,
-    SubTitle = "Made by dausita Helped by wallyxlv",
+    SubTitle = "by dausita",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true,
@@ -18,6 +18,8 @@ local Tabs = {
     MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
     Fisch = Window:AddTab({ Title = "Fisch🐟🎣", Icon = "" }),
+    UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
+    TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
@@ -91,9 +93,9 @@ local ThemeDropdown = Tabs.Settings:AddDropdown("ThemeDropdown", {
 
 Tabs.MM2:AddButton({
     Title = "Keyless OP MM2 Script", 
-    Description = "Wait 10 sec for load", 
+    Description = "Executes the Keyless OP MM2 Script", 
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
         print("Keyless OP MM2 Script executed.")
     end
 })
@@ -113,6 +115,25 @@ Tabs.Fisch:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
         print("Speed Hub executed.")
+    end
+})
+
+Tabs.UniversalAutoPlayPiano:AddButton({
+    Title = "Universal Auto Play Piano V8 Script", 
+    Description = "Best Keyless Piano Script", 
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/JxcExploit/Sad/main/NoKey"))()
+        print("Universal Auto Play Piano executed.")
+    end
+})
+
+-- Yeni Tab: The Strongest Battlegrounds
+Tabs.TheStrongestBattlegrounds:AddButton({
+    Title = "Infernium Hub Tsb", 
+    Description = "Free TSB Script (have key)", 
+    Callback = function()
+        loadstring(game:HttpGet("https://infernium.xyz/tsb.lua", true))()
+        print("Infernium Hub TSB executed.")
     end
 })
 
