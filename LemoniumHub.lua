@@ -93,7 +93,7 @@ Tabs.MM2:AddButton({
     Title = "Keyless OP MM2 Script", 
     Description = "Executes the Keyless OP MM2 Script", 
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/Joystickplays/psychic-octo-invention/main/yarhm.lua", false))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/Au0yX/Community/main/XhubMM2"))()
         print("Keyless OP MM2 Script executed.")
     end
 })
