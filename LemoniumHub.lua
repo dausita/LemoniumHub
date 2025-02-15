@@ -13,8 +13,8 @@ local Window = Fluent:CreateWindow({
 })
 
 local Tabs = {
+    Aimbot = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
-    Main = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit🍎", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
@@ -26,8 +26,9 @@ local Tabs = {
     UniversalAnimation = Window:AddTab({ Title = "Universal Animation/Emote", Icon = "" }),
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
-    Misc = Window:AddTab({ Title = "Misc", Icon = "" }),  
-    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })  
+    UniversalSuperRingPartsV6 = Window:AddTab({ Title = "Universal Super Ring Parts v6", Icon = "" }),
+    Misc = Window:AddTab({ Title = "Misc", Icon = "" }), 
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 }
 
 local Options = Fluent.Options
@@ -46,7 +47,7 @@ Fluent:Notify({
     Duration = 5
 })
 
-Tabs.Main:AddButton({
+Tabs.Aimbot:AddButton({
     Title = "Aimbot🎯",
     Description = "OP and Keyless Aimbot",
     Callback = function()
@@ -172,7 +173,7 @@ Tabs.ShrimpGame:AddButton({
 })
 
 Tabs.BladeBall:AddButton({
-    Title = "Infernium Hub Blade Ball", 
+    Title = "Infernium Hub", 
     Description = "Best Blade Ball Script (have key system)", 
     Callback = function()
         loadstring(game:HttpGet("https://infernium.xyz/Blade.lua",true))()
@@ -208,7 +209,7 @@ Tabs.MadCityChapter1:AddButton({
 })
 
 Tabs.Misc:AddButton({
-    Title = "Infinite Yield 6.2",  -- Infinite Yield butonu eklendi
+    Title = "Infinite Yield 6.2", 
     Description = "Opens Infinite Yield Script",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
@@ -234,7 +235,7 @@ Tabs.Misc:AddSlider("sdaow",
 
 Tabs.Misc:AddSlider("jumpPowerChanger", 
 {
-    Title = "Jump Power Changer",  -- Jump Power changer slider
+    Title = "Jump Power Changer",  
     Description = "Changes your jump power",
     Default = 50,
     Min = 50,
@@ -250,7 +251,7 @@ Tabs.Misc:AddSlider("jumpPowerChanger",
 
 Tabs.Misc:AddSlider("fovChanger", 
 {
-    Title = "FOV Changer",  -- FOV slider
+    Title = "FOV Changer",  
     Description = "Changes your field of view",
     Default = 70,
     Min = 0,
@@ -262,20 +263,11 @@ Tabs.Misc:AddSlider("fovChanger",
 })
 
 Tabs.Misc:AddButton({
-    Title = "Dark Dex",  -- Dark Dex butonu eklendi
+    Title = "Dark Dex",  
     Description = "Opens the Dark Dex script",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/infyiff/backup/main/dex.lua"))()
         print("Dark Dex executed.")
-    end
-})
-
-Tabs.RealisticStreetSoccer:AddButton({
-    Title = "Best Realistic Street Soccer Script", 
-    Description = "Executes the best Realistic Street Soccer script", 
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/YourRepo/RealisticStreetSoccer/main/script.lua"))()
-        print("Realistic Street Soccer script executed.")
     end
 })
 
@@ -300,5 +292,3 @@ Tabs.Settings:AddButton({
 SaveManager:LoadAutoloadConfig()
 InterfaceManager:BuildInterfaceSection(Tabs.Settings)
 SaveManager:BuildConfigSection(Tabs.Settings)
-
-Window:SelectTab(1)     
