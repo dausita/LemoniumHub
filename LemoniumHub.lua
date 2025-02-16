@@ -241,7 +241,7 @@ Tabs.MadCityChapter1:AddButton({
 })
 
 Tabs.Misc:AddButton({
-    Title = "Infinite Yield 6.2", 
+    Title = "Infinite Yield 6.3", 
     Description = "Opens Infinite Yield Script",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
