@@ -25,6 +25,7 @@ local Tabs = {
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
     Fisch = Window:AddTab({ Title = "Fisch", Icon = "" }),
+    LumberTycoon2 = Window:AddTab({ Title = "Lumber Tycoon 2", Icon = "" }),
     MadCityChapter1 = Window:AddTab({ Title = "Mad City Chapter 1", Icon = "" }),
     MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
     ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }),
@@ -277,6 +278,16 @@ Tabs.DigIt:AddButton({
         print("FrostByte Dig It Script Executed.")
     end
 })
+
+Tabs.LumberTycoon2:AddButton({
+    Title = "Kron Hub",
+    Description = "The Best Keyless Lumber Tycoon 2 Script",
+    Callback = function()
+        loadstring(game:HttpGet('https://raw.githubusercontent.com/DevKron/Kron_Hub/refs/heads/main/version_1.0'))("")
+        print("Kron Hub LT2 Script Executed.")
+    end
+})
+
 
 Tabs.Misc:AddButton({
     Title = "Infinite Yield 6.3", 
