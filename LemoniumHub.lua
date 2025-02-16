@@ -305,7 +305,7 @@ Tabs.Misc:AddButton({
 Tabs.Misc:AddSlider("headSizeChanger", 
 {
     Title = "Hitbox Expander",  
-    Description = "Changes the hitbox size other players",
+    Description = "Changes the hitbox size of other players",
     Default = 15,
     Min = 10,
     Max = 30,
@@ -317,10 +317,10 @@ Tabs.Misc:AddSlider("headSizeChanger",
     end
 })
 
-_G.Disabled = true
+_G.Disabled = true  
 
 game:GetService('RunService').RenderStepped:connect(function()
-    if _G.Disabled then
+    if not _G.Disabled then  
         for i, v in next, game:GetService('Players'):GetPlayers() do
             if v.Name ~= game:GetService('Players').LocalPlayer.Name then
                 pcall(function()
@@ -334,6 +334,9 @@ game:GetService('RunService').RenderStepped:connect(function()
         end
     end
 end)
+
+
+
 
 Tabs.Settings:AddButton({
     Title = "Save Config", 
