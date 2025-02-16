@@ -18,7 +18,8 @@ local Tabs = {
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
     Brookhaven = Window:AddTab({ Title = "Brookhaven", Icon = "" }),
-	CabinRoleplay = Window:AddTab({ Title = "Cabin Roleplay", Icon = "" }),
+    CabinRoleplay = Window:AddTab({ Title = "Cabin Roleplay", Icon = "" }),
+    DrivingEmpire = Window:AddTab({ Title = "Driving Empire", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
     Fisch = Window:AddTab({ Title = "Fisch", Icon = "" }),
@@ -30,7 +31,7 @@ local Tabs = {
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
     UniversalSuperRingPartsV6 = Window:AddTab({ Title = "Universal Super Ring Parts v6", Icon = "" }),
     Misc = Window:AddTab({ Title = "Misc", Icon = "" }), 
-	Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
     
 }
 
@@ -50,7 +51,6 @@ Fluent:Notify({
     Duration = 5
 })
 
--- CabinRoleplay tab'ına M1ZZ001 gui butonunu ekliyoruz
 Tabs.CabinRoleplay:AddButton({
     Title = "M1ZZ001 gui",
     Description = "Executes Cabin Roleplay Script.",
@@ -236,6 +236,15 @@ Tabs.MadCityChapter1:AddButton({
     Callback = function()
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/VanPotent/EpicHub/refs/heads/main/loader.lua'),true))()
         print("Epic Hub executed.")
+    end
+})
+
+Tabs.DrivingEmpire:AddButton({
+    Title = "Aussie",  
+    Description = "Have Key But Easily To Get It",  
+    Callback = function()
+        loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4f5c7bbe546251d81e9d3554b109008f.lua"))()
+        print("Aussie script executed.")
     end
 })
 
