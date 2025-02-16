@@ -306,7 +306,7 @@ Tabs.Misc:AddSlider("headSizeChanger",
 {
     Title = "Hitbox Expander",  
     Description = "Changes the hitbox size other players",
-    Default = 0,
+    Default = 15,
     Min = 10,
     Max = 30,
     Rounding = 1,
