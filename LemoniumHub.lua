@@ -13,7 +13,7 @@ local Window = Fluent:CreateWindow({
 })
 
 local Tabs = {
-    Aimbot = Window:AddTab({ Title = "Aimbot🎯", Icon = "" }),
+    Aimbot = Window:AddTab({ Title = "Aimbot", Icon = "" }),
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
@@ -21,7 +21,7 @@ local Tabs = {
 	CabinRoleplay = Window:AddTab({ Title = "Cabin Roleplay", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
-    Fisch = Window:AddTab({ Title = "Fisch🐟", Icon = "" }),
+    Fisch = Window:AddTab({ Title = "Fisch", Icon = "" }),
     MadCityChapter1 = Window:AddTab({ Title = "Mad City Chapter 1", Icon = "" }),
     MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
     ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }),
