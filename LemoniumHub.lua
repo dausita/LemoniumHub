@@ -53,14 +53,13 @@ Fluent:Notify({
 -- CabinRoleplay tab'ına M1ZZ001 gui butonunu ekliyoruz
 Tabs.CabinRoleplay:AddButton({
     Title = "M1ZZ001 gui",
-    Description = "M1ZZ001 GUI'yi çalıştırır.",
+    Description = "Executes Cabin Roleplay Script.",
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/SomeUser/M1ZZ001gui/main/script.lua"))()
-        print("M1ZZ001 GUI çalıştırıldı.")
+        print("M1ZZ001 GUI Executed.")
     end
 })
 
--- Diğer mevcut tablar ve butonlar buraya eklenmiş şekilde devam ediyor
 Tabs.Aimbot:AddButton({
     Title = "Aimbot🎯",
     Description = "OP and Keyless Aimbot",
@@ -245,7 +244,7 @@ Tabs.Misc:AddButton({
     Description = "Opens Infinite Yield Script",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-        print("Infinite Yield 6.2 executed.")
+        print("Infinite Yield 6.3 executed.")
     end
 })
 
@@ -255,7 +254,7 @@ Tabs.Misc:AddSlider("sdaow",
     Description = "Changes ur speed",
     Default = 16,
     Min = 16,
-    Max = 500,
+    Max = 600,
     Rounding = 1,
     Callback = function(Value)
         local player = game.Players.LocalPlayer
@@ -271,9 +270,9 @@ Tabs.Misc:AddSlider("jumpPowerChanger",
     Description = "Changes your jump power",
     Default = 50,
     Min = 50,
-    Max = 200,
+    Max = 500,
     Rounding = 1,
-    Callback = function(Value)
+    Callback = function(Value)	
         local player = game.Players.LocalPlayer
         if player and player.Character and player.Character:FindFirstChild("Humanoid") then
             player.Character.Humanoid.JumpPower = Value
