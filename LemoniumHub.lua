@@ -26,6 +26,7 @@ local Tabs = {
     MadCityChapter1 = Window:AddTab({ Title = "Mad City Chapter 1", Icon = "" }),
     MM2 = Window:AddTab({ Title = "MM2", Icon = "" }),
     ShrimpGame = Window:AddTab({ Title = "Shrimp Game", Icon = "" }),
+    TowerOfHell = Window:AddTab({ Title = "Tower Of Hell", Icon = "" }),
     UniversalAnimation = Window:AddTab({ Title = "Universal Animation/Emote", Icon = "" }),
     TheStrongestBattlegrounds = Window:AddTab({ Title = "The Strongest Battlegrounds", Icon = "" }),
     UniversalAutoPlayPiano = Window:AddTab({ Title = "Universal Auto Play Piano", Icon = "" }),
@@ -245,6 +246,15 @@ Tabs.DrivingEmpire:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/4f5c7bbe546251d81e9d3554b109008f.lua"))()
         print("Aussie script executed.")
+    end
+})
+
+Tabs.TowerOfHell:AddButton({
+    Title = "Starry",
+    Description = "The Best T.O.H Script (Have Little Key System)",
+    Callback = function()
+        loadstring(game:HttpGet("https://luau.tech/build"))()
+        print("Starry Executed.")
     end
 })
 
