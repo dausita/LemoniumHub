@@ -319,11 +319,10 @@ Tabs.Misc:AddSlider("headSizeChanger",
 _G.Disabled = true
 
 game:GetService('RunService').RenderStepped:connect(function()
-    if _G.Disabled then
+    if _G.Disabled false
         for i, v in next, game:GetService('Players'):GetPlayers() do
             if v.Name ~= game:GetService('Players').LocalPlayer.Name then
                 pcall(function()
-                    -- Diğer oyuncuların HumanoidRootPart boyutunu ve özelliklerini değiştiriyoruz
                     v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize, _G.HeadSize, _G.HeadSize)
                     v.Character.HumanoidRootPart.Transparency = 0.7
                     v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Royal purple")
