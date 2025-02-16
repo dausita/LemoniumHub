@@ -20,6 +20,7 @@ local Tabs = {
     BreakIn2 = Window:AddTab({ Title = "Break In 2", Icon = "" }),
     Brookhaven = Window:AddTab({ Title = "Brookhaven", Icon = "" }),
     CabinRoleplay = Window:AddTab({ Title = "Cabin Roleplay", Icon = "" }),
+    DigIt = Window:AddTab({ Title = "Dig It", Icon = "" }),
     DrivingEmpire = Window:AddTab({ Title = "Driving Empire", Icon = "" }),
     CarSpeed = Window:AddTab({ Title = "Universal Car Speed", Icon = "" }),
     Evade = Window:AddTab({ Title = "Evade", Icon = "" }),
@@ -265,6 +266,15 @@ Tabs.BreakIn2:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://luau.tech/build"))()
         print("Starry Executed.")
+    end
+})
+
+Tabs.DigIt:AddButton({
+    Title = "FrostByte",
+    Description = "The Best Keyless Dig It Script",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/alyssagithub/Scripts/refs/heads/main/FrostByte/Initiate.lua"))()
+        print("FrostByte Dig It Script Executed.")
     end
 })
 
