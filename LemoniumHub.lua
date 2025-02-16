@@ -306,7 +306,7 @@ Tabs.Misc:AddSlider("headSizeChanger",
 {
     Title = "Hitbox Expander",  
     Description = "Changes the hitbox size other players",
-    Default = 15,
+    Default = 0,
     Min = 10,
     Max = 30,
     Rounding = 1,
@@ -324,7 +324,6 @@ game:GetService('RunService').RenderStepped:connect(function()
         for i, v in next, game:GetService('Players'):GetPlayers() do
             if v.Name ~= game:GetService('Players').LocalPlayer.Name then
                 pcall(function()
-                    -- Diğer oyuncuların HumanoidRootPart boyutunu ve özelliklerini değiştiriyoruz
                     v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize, _G.HeadSize, _G.HeadSize)
                     v.Character.HumanoidRootPart.Transparency = 0.7
                     v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Royal purple")
