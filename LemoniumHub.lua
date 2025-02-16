@@ -307,7 +307,7 @@ Tabs.Misc:AddSlider("headSizeChanger",
     Title = "Hitbox Expander",  
     Description = "Changes the hitbox size of other players",
     Default = 15,
-    Min = 0,
+    Min = 0,  
     Max = 30,
     Rounding = 1,
     Callback = function(Value)
@@ -334,6 +334,7 @@ game:GetService('RunService').RenderStepped:connect(function()
         end
     end
 end)
+
 
 
 
