@@ -17,6 +17,7 @@ local Tabs = {
     Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
+    BreakIn2 = Window:AddTab({ Title = "Break In 2", Icon = "" }),
     Brookhaven = Window:AddTab({ Title = "Brookhaven", Icon = "" }),
     CabinRoleplay = Window:AddTab({ Title = "Cabin Roleplay", Icon = "" }),
     DrivingEmpire = Window:AddTab({ Title = "Driving Empire", Icon = "" }),
@@ -252,6 +253,15 @@ Tabs.DrivingEmpire:AddButton({
 Tabs.TowerOfHell:AddButton({
     Title = "Starry",
     Description = "The Best T.O.H Script (Have Little Key System)",
+    Callback = function()
+        loadstring(game:HttpGet("https://luau.tech/build"))()
+        print("Starry Executed.")
+    end
+})
+
+Tabs.BreakIn2:AddButton({
+    Title = "Starry",
+    Description = "The Best Break In 2 Script (Have Little Key System)",
     Callback = function()
         loadstring(game:HttpGet("https://luau.tech/build"))()
         print("Starry Executed.")
