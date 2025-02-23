@@ -7,7 +7,7 @@ local Window = Fluent:CreateWindow({
     SubTitle = "made by dausita helped by wallyxlv",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
-    Acrylic = true,
+    Acrylic = false,
     Theme = "Amethyst",
     MinimizeKey = Enum.KeyCode.RightShift
 })
@@ -290,11 +290,11 @@ Tabs.LumberTycoon2:AddButton({
 
 
 Tabs.Misc:AddButton({
-    Title = "Infinite Yield 6.3", 
-    Description = "Opens Infinite Yield Script",
+    Title = "Infinite Yield", 
+    Description = "Opens Infinite Yield",
     Callback = function()
         loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-        print("Infinite Yield 6.3 executed.")
+        print("Infinite Yield executed.")
     end
 })
 
