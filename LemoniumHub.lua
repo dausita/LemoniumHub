@@ -171,15 +171,6 @@ Tabs.TheStrongestBattlegrounds:AddButton({
 })
 
 Tabs.Evade:AddButton({
-    Title = "Tbao Hub", 
-    Description = "Best Keyless Evade Script", 
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubEvade"))()
-        print("Tbao Hub Evade executed.")
-    end
-})
-
-Tabs.Evade:AddButton({
     Title = "Rose Farm", 
     Description = "Keyless Rose Farm", 
     Callback = function()
