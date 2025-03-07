@@ -14,7 +14,6 @@ local Window = Fluent:CreateWindow({
 
 local Tabs = {
     Aimbot = Window:AddTab({ Title = "Aimbot", Icon = "" }),
-    Arsenal = Window:AddTab({ Title = "Arsenal", Icon = "" }),
     BladeBall = Window:AddTab({ Title = "Blade Ball", Icon = "" }),
     BloxFruit = Window:AddTab({ Title = "Blox Fruit", Icon = "" }),
     BreakIn2 = Window:AddTab({ Title = "Break In 2", Icon = "" }),
@@ -213,15 +212,6 @@ Tabs.UniversalAnimation:AddButton({
     Callback = function()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/Eazvy/public-scripts/main/Universal_Animations_Emotes.lua"))()
         print("Universal Animation script executed.")
-    end
-})
-
-Tabs.Arsenal:AddButton({
-    Title = "Tbao Hub Arsenal", 
-    Description = "Best Keyless Arsenal Script", 
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/TbaoHubArsenal"))()
-        print("Tbao Hub Arsenal executed.")
     end
 })
 
