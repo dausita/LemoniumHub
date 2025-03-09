@@ -320,9 +320,18 @@ Tabs.Misc:AddSlider("fovChanger",
     Max = 120,
     Rounding = 1,
     Callback = function(Value)
-        game.Workspace.CurrentCamera.FieldOfView = Value
+        _G.FovValue = Value  
+        game.Workspace.CurrentCamera.FieldOfView = _G.FovValue
     end
 })
+
+local RunService = game:GetService("RunService")
+RunService.RenderStepped:Connect(function()
+    if _G.FovValue then
+        game.Workspace.CurrentCamera.FieldOfView = _G.FovValue  
+    end
+end)
+
 
 Tabs.Misc:AddButton({
     Title = "Dark Dex",  
